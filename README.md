@@ -1,7 +1,7 @@
 # swimming-detection
 <div align="center">
 
-# 🏊 Swimmer Injury Pattern Detection System
+# Swimmer Injury Pattern Detection System
 
 
 >  This system identifies movement patterns linked to higher injury rates in swimmers.
@@ -60,8 +60,8 @@ Raw Swimming Video (Front View)
 ┌─────────────────────────────────────────┐
 │  STAGE 4 · Visualization                │
 │  visualization.py                       │
-│  ├─ 🟢 Green halo = confident joint    │
-│  ├─ ⚫ Grey dot = occluded joint       │
+│  ├─ Green halo = confident joint    │
+│  ├─ Grey dot = occluded joint       │
 │  ├─ ─── Black lines = skeleton         │
 │  └─ Saves annotated frames to Drive    │
 └─────────────────────────────────────────┘
