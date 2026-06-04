@@ -3,16 +3,15 @@
 
 # 🏊 Swimmer Injury Pattern Detection System
 
-**GP26 · German University in Cairo · Computer Vision · Sports AI**
 
-> ⚠️ This system identifies movement patterns linked to higher injury rates in swimmers.
+>  This system identifies movement patterns linked to higher injury rates in swimmers.
 > It does **not** diagnose injury — it flags patterns that warrant attention from a coach or physiotherapist.
 
 </div>
 
 ---
 
-## 📌 Overview
+## Overview
 
 An end-to-end AI pipeline that analyzes front-view swimming videos and automatically detects biomechanical risk patterns in swimmers. The system processes raw video footage, detects stroke type, extracts anatomical keypoints, and flags asymmetry patterns for coach review.
 
@@ -20,7 +19,7 @@ The core contribution of this work is a **domain-specific fine-tuned keypoint de
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 Raw Swimming Video (Front View)
@@ -80,7 +79,7 @@ Raw Swimming Video (Front View)
 
 ---
 
-## ⭐ The Fine-Tuned Model — Core Contribution
+## The Fine-Tuned Model — Core Contribution
 
 ### Why Fine-Tuning Was Necessary
 
@@ -97,7 +96,7 @@ The fine-tuned models achieve **99%+ detection** on the same footage.
 
 ### Model Performance
 
-| Metric | 🏊 Breaststroke Model | 🦋 Butterfly Model |
+| Metric | Breaststroke Model | Butterfly Model |
 |:---|:---:|:---:|
 | **Architecture** | Roboflow 3.0 Accurate | YOLOv11 Small |
 | **Base Weights** | COCO-pose pretrained | COCO-pose pretrained |
@@ -128,7 +127,7 @@ The fine-tuned models achieve **99%+ detection** on the same footage.
 
 ### Generic vs Fine-Tuned — Direct Comparison
 
-| Metric | ❌ Generic COCO Model | ✅ Fine-Tuned (Ours) |
+| Metric | Generic COCO Model | Fine-Tuned (Ours) |
 |:---|:---:|:---:|
 | Swimmer detection rate | ~16% | **~99%** |
 | Pool environment | Unseen | Trained on |
@@ -139,7 +138,7 @@ The fine-tuned models achieve **99%+ detection** on the same footage.
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 ```
 Dataset/
@@ -162,17 +161,17 @@ Dataset/
 | **Total** | **19** | **8** | **~5,781** |
 
 **Recording details:**
-- 📍 Location: Outdoor pool facility, Cairo, Egypt
-- 🎥 Frame rate: 57–60 fps
-- 📐 Resolution: Up to 1080p
-- 🏷️ Annotation: Manual keypoint labeling in Roboflow
+- Location: Outdoor pool facility, Cairo, Egypt
+- Frame rate: 57–60 fps
+- Resolution: Up to 1080p
+- Annotation: Manual keypoint labeling in Roboflow
   - Visible joints → precise placement
   - Underwater joints → marked as occluded
   - Empty frames → null samples
 
 ---
 
-## 🔧 Preprocessing Pipeline
+## Preprocessing Pipeline
 
 | Step | Method | Parameters | Purpose |
 |:---|:---|:---|:---|
@@ -184,7 +183,7 @@ Dataset/
 
 ---
 
-## 📊 Results
+## Results
 
 ### Stroke Detection Accuracy
 
@@ -209,7 +208,7 @@ Dataset/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Requirements
 
@@ -252,7 +251,7 @@ pip install requests numpy tqdm opencv-python-headless
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
 project/
@@ -267,7 +266,7 @@ project/
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 | # | Limitation | Details |
 |:---|:---|:---|
